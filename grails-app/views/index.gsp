@@ -7,26 +7,6 @@
     <g:set var="projectInstanceList" value="${empact.Project.list()}" />
     <meta name="layout" content="main"/>
     <title>Welcome to EMPaCT</title>
-
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-
-        google.load("visualization", "1", {packages: ["map"]});
-        google.setOnLoadCallback(drawMap);
-        function drawMap() {
-            var data = new google.visualization.DataTable();
-            var elems = document.getElementsByClassName('project-data');
-            data.addColumn('string', 'Name');
-            data.addColumn('string', 'Address');
-            for (var i = 0; i < elems.length; i++) {
-                var desc = elems[i].getElementsByClassName('country-desc').item(0).innerText;
-                var name = elems[i].getElementsByClassName('country-name').item(0).innerText;
-                data.addRow(new Array(name, desc));
-            }
-            var map = new google.visualization.Map(document.getElementById('map'));
-            map.draw(data, {showTip: true, zoomLevel: 2});
-        }
-    </script>
 </head>
 
 <body>
