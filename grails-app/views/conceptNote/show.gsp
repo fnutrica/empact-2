@@ -23,11 +23,20 @@
 			</g:if>
 			<ol class="property-list conceptNote">
 			
-				<g:if test="${conceptNoteInstance?.title}">
+				<g:if test="${conceptNoteInstance?.shortTitle}">
 				<li class="fieldcontain">
-					<span id="title-label" class="property-label"><g:message code="conceptNote.title.label" default="Title" /></span>
+					<span id="shortTitle-label" class="property-label"><g:message code="conceptNote.shortTitle.label" default="Short Title" /></span>
 					
-						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${conceptNoteInstance}" field="title"/></span>
+						<span class="property-value" aria-labelledby="shortTitle-label"><g:fieldValue bean="${conceptNoteInstance}" field="shortTitle"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conceptNoteInstance?.fullTitle}">
+				<li class="fieldcontain">
+					<span id="fullTitle-label" class="property-label"><g:message code="conceptNote.fullTitle.label" default="Full Title" /></span>
+					
+						<span class="property-value" aria-labelledby="fullTitle-label"><g:fieldValue bean="${conceptNoteInstance}" field="fullTitle"/></span>
 					
 				</li>
 				</g:if>
