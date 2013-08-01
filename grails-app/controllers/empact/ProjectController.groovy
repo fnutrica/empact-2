@@ -94,7 +94,7 @@ class ProjectController {
         for (Project project : projectInstanceList) {
             Country country = project.country
             markerList[index] = [
-                    'country': project.name,
+                    'project': project.name,
                     'lat': country.lat,
                     'lng': country.lng
             ]
