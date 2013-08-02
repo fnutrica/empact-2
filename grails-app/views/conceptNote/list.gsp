@@ -14,8 +14,9 @@
 <div class='container'>
     <!-- Title -->
     <h3 class="titleText inline">Concept Notes</h3>
-    <g:if test="${session.user && (userType?.equals("Moderator") || userType?.equals("Superuser"))}">
-        <a href="#newConceptNote" class="btn btn-primary pull-right" data-toggle="modal" role="button">New Concept Note</a>
+
+    <g:if test="${session.user && (userType?.equals("Moderator"))}">
+        <div class="btn btn-primary pull-right">Hi</div>
     </g:if>
 
     <div class="accordion" id="conceptnote-accordion">
@@ -35,11 +36,13 @@
                         ${fieldValue(bean: conceptNoteInstance, field: "description")} <br>
                         <div class="pull-right">
                             <g:form>
+                                <g:if test="${session.user && (userType?.equals("Moderator") || userType?.equals("Superuser"))}">
                                 <fieldset class="buttons">
                                     <g:hiddenField name="id" value="${conceptNoteInstance?.id}" />
                                     <div class='edit btn btn-link' role='btn'>Edit</div>
                                     <g:actionSubmit class="delete btn btn-link" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                                 </fieldset>
+                                    </g:if>
                             </g:form>
                         </div>
                     </div>

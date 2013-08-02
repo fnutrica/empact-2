@@ -1,4 +1,3 @@
-
 <%@ page import="empact.EndUser" %>
 <!DOCTYPE html>
 <html>
@@ -18,7 +17,7 @@
                 <g:uploadForm action="upload">
                     <sub>Upload a User Image:</sub><br>
                     <input type="file" name="myFile" id="file-upload" style="width:80px" /><br>
-                    <input type="submit" class="btn btn-primary btn-mini save " value="Submit"/>
+                    <input type="submit" class="btn btn-primary btn-mini save" value="Submit"/>
                 </g:uploadForm>
             </div>
 

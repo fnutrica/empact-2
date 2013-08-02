@@ -209,7 +209,7 @@ class BootStrap {
                 'Past studies show that NTDs drain a country of its social, political and economic capital. But can NTD control jumpstart capital development? Evidence of the relationship between NTD control and human capital development must be explored further in order to more fully understand the economic impact of NTDs and develop strategies to combat their economic tolls'
         ]
 
-/*        if (!ConceptNote.count()) {
+        if (!ConceptNote.count()) {
             for (int i = 0; i < cnShortTitles.size(); i++) {
                 new ConceptNote(
                         shortTitle: cnShortTitles[i],
@@ -217,7 +217,7 @@ class BootStrap {
                         description: cnDescriptions[i]
                 ).save()
             }
-        }*/
+        }
 
         if (!UserType.count()) {
             for (String type : userType) {

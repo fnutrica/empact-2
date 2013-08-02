@@ -41,7 +41,7 @@
                         </ul>
                     </li>
 
-                    <li><g:link controller="thread" action="forumhome">Forum</g:link></li>
+                    <li><g:link controller="thread" action="list">Forum</g:link></li>
 
                     <li id="nav-messages">
                         <g:link controller="message">
@@ -95,7 +95,7 @@
 <footer>
     <div class='items'>
         <g:link controller="faq">FAQ</g:link> &middot;
-        <a href="#">Links</a>
+        <g:link controller="link">Links</g:link>
         <a href="#askMod" data-toggle="modal">&middot;Ask Us</a>
     </div>
 </footer>
