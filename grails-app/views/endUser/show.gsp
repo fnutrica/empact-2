@@ -41,6 +41,13 @@
                         <li class="data-item" id="country">${endUserInstance?.country?.name}</li>
                         <li class="data-item" id="address">${endUserInstance?.address}</li>
                         <li class="data-item" id="phone">${endUserInstance?.phone}</li>
+                        <li class="data-item">
+                            <g:link controller="endUser" action="downloadResume" id="${session.user.id}">Resume</g:link>
+                            <g:uploadForm action="uploadResume" id="${session.user.id}" title="Upload Your Resume" class="pull-right">
+                                <input type="file" name="myResume" id="file-upload" style="width:80px"/>
+                                <input type="submit" class="btn btn-primary btn-mini save" value="Submit"/>
+                            </g:uploadForm>
+                        </li>
 
                     </ul>
                 </div>

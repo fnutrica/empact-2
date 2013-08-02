@@ -337,4 +337,60 @@ class EndUserController {
         response.outputStream.flush()
     }
 
+    def uploadResume(Long id) {
+
+        def userInstance = EndUser.get(id)
+
+        def g = request.getFile("myResume")
+
+
+        if (g.empty) {
+            flash.message = 'file cannot be empty'
+            render(view: 'uploadForm')
+            return
+        }
+        def origname = g.getOriginalFilename()
+
+
+
+        def ext
+        int i = origname.lastIndexOf('.');
+        if (i > 0) {
+            ext = origname.substring(i + 1);
+        }
+
+        userInstance.setResumeType(ext)
+
+        InputStream file = g.inputStream
+        byte[] bytes = file.bytes
+
+
+        userInstance.file = bytes
+
+
+
+        userInstance.save(flush:true)
+
+        redirect(action: "list", controller: "endUser")
+
+    }
+
+    def downloadResume(long id) {
+
+        def userInstance = EndUser.get(id)
+
+        byte[] bytes = userInstance.file
+
+        if (bytes) {
+            response.setContentType("application/octet-stream")
+            response.setHeader("Content-disposition", "attachment;filename=${userInstance.toString()}-resume.${userInstance.resumeType}")
+            response.outputStream << bytes
+            response.getOutputStream().flush()
+
+        } else render "Error"
+
+        redirect(action: "show", id: id)
+
+    }
+
 }

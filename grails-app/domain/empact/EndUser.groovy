@@ -15,6 +15,8 @@ class EndUser {
     Integer phone
     UserType userType
     Country country
+    byte[] file
+    String resumeType
 
     // Student Analysts, Mentors
     String institution
@@ -63,5 +65,7 @@ class EndUser {
         mentorEmail(nullable: true)
         mentorName(nullable: true)
         mentorInstitution(nullable: true)
+        file(nullable: true, maxSize: 1000000)
+        resumeType(nullable: true)
     }
 }

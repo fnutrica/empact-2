@@ -5,8 +5,8 @@
     <ignored path="empact.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/EndUser.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375125941282" ignored="false" />
-    <file path="/show.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375458299697" ignored="false" />
+    <file path="/EndUser.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375475208916" ignored="false" />
+    <file path="/show.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375476043407" ignored="false" />
     <file path="/EndUserController.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375305004015" ignored="false" />
     <file path="/Project.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374784218902" ignored="false" />
     <file path="/myprojects.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374765643180" ignored="false" />
@@ -267,10 +267,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="218" selection-end="218" vertical-scroll-proportion="0.26258206">
+            <state line="144" column="8" selection-start="6310" selection-end="6310" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndUserController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/empact/EndUserController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="367" column="123" selection-start="12617" selection-end="12617" vertical-scroll-proportion="-11.956522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/show.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="38" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.53691274">
               <folding />
             </state>
           </provider>
@@ -307,13 +325,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/project/_project.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/project/myprojects.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/project/_listitem.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/empact/Country.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/empact/ProjectController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/endUser/show.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/global.css" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/empact/Link.groovy" />
@@ -323,6 +338,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/conceptNote/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/empact/EndUser.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/empact/EndUserController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/endUser/show.gsp" />
       </list>
     </option>
   </component>
@@ -589,7 +607,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16345468" sideWeight="0.45545796" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31976745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.225" sideWeight="0.60486674" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.225" sideWeight="0.60486674" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929438" sideWeight="0.627907" order="2" side_tool="false" content_ui="tabs" />
@@ -673,30 +691,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/verify.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="89" selection-start="319" selection-end="319" vertical-scroll-proportion="0.23648648">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/manage.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="0" selection-end="6119" vertical-scroll-proportion="0.5743243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/_previewInList.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="0" selection-end="1233" vertical-scroll-proportion="0.4391892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="293" selection-end="293" vertical-scroll-proportion="0.30405405">
           <folding />
         </state>
       </provider>
@@ -786,7 +783,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="218" selection-end="218" vertical-scroll-proportion="0.26258206">
+        <state line="144" column="8" selection-start="6310" selection-end="6310" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/empact/EndUser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="33" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-20.4">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/empact/EndUserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="367" column="123" selection-start="12617" selection-end="12617" vertical-scroll-proportion="-11.956522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="38" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.53691274">
           <folding />
         </state>
       </provider>
