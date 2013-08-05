@@ -76,20 +76,18 @@
         </div>
         <div class="span4">
             <h4>If you want to do research...</h4>
-            <p>We are always looking for researchers to help with analyzing data and finding solutions.
-            Whether you're an undergraduate student interested in global health, a post-graduate hoping to help save the world, Batman,
-            or anything in between - we'd be glad to have you on board.
-            Take a look at our Open Projects to see if our projects align with your interests.</p>
+            <p>Create a profile, upload your resume/CV and request participation on different countries’
+            research needs that resonate with your passions and academic interests!</p>
         </div>
         <div class="span3">
-            <h4>If you're with an NGO...</h4>
-            <p>NGO Officials are a very important peoples to the EMPaCT machine!</p>
+            <h4>If you're a government official...</h4>
+            <p>Post your country’s research needs related to NTD control and human development
+            measures. Also provide relevant data reports and briefs that have been done in your country.</p>
         </div>
         <div class="span4">
-            <h4>If you work for the WHO...</h4>
-            <p>WHO Officials are very important to this whole process.
-            Too bad Annabelle doesn't really know what they're going to do.
-            Whoops.</p>
+            <h4>If you are a faculty mentor...</h4>
+            <p>Supervise, collaborate, and watch the progress of student analysts through reports,
+            analytic documents and discussion.</p>
         </div>
     </div>
 </center>

@@ -4,6 +4,7 @@ import empact.EndUser
 import empact.Language
 import empact.UserType
 import empact.WhoOffice
+import empact.Faq
 
 class BootStrap {
 
@@ -208,6 +209,33 @@ class BootStrap {
                 'NTDs exacerbate existing issues of low birth weight, poor nutritional status, and anemia in pregnancy, yet rarely are NTD control efforts incorporated into broader maternal and child health (MCH) initiatives. Establishing the relationship between NTD control and improved MCH outcomes, such as Soil Transmitted Helminth (STH) control on increased birth weight, will facilitate the integration of NTD control into future MCH initiatives',
                 'Past studies show that NTDs drain a country of its social, political and economic capital. But can NTD control jumpstart capital development? Evidence of the relationship between NTD control and human capital development must be explored further in order to more fully understand the economic impact of NTDs and develop strategies to combat their economic tolls'
         ]
+
+        def faqQuestions = [
+                'What is EMPaCT?',
+                'What is the driving goal of the Task Force?',
+                'What is a research concept note and what is its purpose?',
+                'What are some existing data sources related to NTD prevalence and its impact on different facets of human development?',
+                'How do I get paired up with a project?',
+                'What are other features of the EMPaCT website besides the matching application of the database?'
+        ]
+
+        def faqAnswers = [
+                'A WHO Task Force for Enhanced Monitoring of the impact and outcomes of Preventive Chemotherapy and control of NTDs.',
+                'To promote political will for expansion of NTD control efforts by making policy-makers aware of the contributions that NTD control can have on broader health, education, environmental and poverty-reduction efforts.',
+                'Research concept notes are common analytical frameworks based on needs expressed by countries and partners. These research frameworks can be completed with existing data sources as well as primary data collection. Concept notes are framed in terms of the potential uses of the evidence; e.g. evidence of the relationship between poverty and NTDs may enable consideration of investments in PCT as a targeting modality for poverty reduction strategies. Countries can respond through this website by requesting support to complete the analysis of a pre-defined study or another topic.',
+                'Existing sources of data include country censuses, household surveys, Demographic health surveys, and additional NTDs data.',
+                'The database performs a matching application between NTDs endemic countries and student researchers targeting a specific strategic research needs previously posted by both endemic countries and the EMPaCT Task Force Administrator. Student researchers will create personal profiles and request participation on different research needs that are posted.',
+                'The EMPaCT website will also include other resources such as NTD news and articles, advocacy information, free online courses and software downloads, a space for community forum, an interactive data mining graph, and an EMPaCT Progress World Map showing where research is taking place and indicating the status of the project.'
+        ]
+
+        if(!Faq.count()){
+            for (int i=0; i<faqQuestions.size(); i++){
+                new Faq(
+                        question: faqQuestions[i],
+                        answer: faqAnswers[i]
+                ).save()
+            }
+        }
 
         if (!ConceptNote.count()) {
             for (int i = 0; i < cnShortTitles.size(); i++) {
