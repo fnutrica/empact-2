@@ -5,6 +5,7 @@ import empact.Language
 import empact.UserType
 import empact.WhoOffice
 import empact.Faq
+import empact.Skill
 
 class BootStrap {
 
@@ -182,6 +183,10 @@ class BootStrap {
                 'Arabic', 'Chinese', 'English', 'French', 'Russian', 'Spanish'
         ]
 
+        def skills = [
+                'Anthropology', 'Economics', 'Epidemiology', 'Geography', 'Statistics', 'Qualitative Survey Methods', 'Quantitative Survey Methods'
+        ]
+
         def userType = [
                 'Student Analyst', 'Expert', 'Mentor', 'WHO Official', 'Country Official', 'NGO Official', 'Moderator', 'Superuser', 'Bot'
         ]
@@ -228,6 +233,7 @@ class BootStrap {
                 'The EMPaCT website will also include other resources such as NTD news and articles, advocacy information, free online courses and software downloads, a space for community forum, an interactive data mining graph, and an EMPaCT Progress World Map showing where research is taking place and indicating the status of the project.'
         ]
 
+
         if(!Faq.count()){
             for (int i=0; i<faqQuestions.size(); i++){
                 new Faq(
@@ -259,6 +265,14 @@ class BootStrap {
             for (String lang : languages) {
                 new Language(
                         name: lang
+                ).save()
+            }
+        }
+
+        if (!Skill.count()) {
+            for (String skill : skills) {
+                new Skill(
+                        name: skill
                 ).save()
             }
         }

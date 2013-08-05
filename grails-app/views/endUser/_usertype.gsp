@@ -5,7 +5,12 @@
             <label class="control-label" for="skills">Skills<sup class='red'>*</sup></label>
 
             <div class="controls">
-                <input type="text" id="skills" name="skills" class="required" placeholder="Skills">
+                <select id="skill" name='skill.id' multiple="multiple" size="6">
+                    <g:each in="${empact.Skill.list().sort { a, b -> a.name.compareTo(b.name) }}"
+                            var="skillInstance">
+                        <option value="${skillInstance.id}">${skillInstance.name}</option>
+                    </g:each>
+                </select>
             </div>
         </div>
 

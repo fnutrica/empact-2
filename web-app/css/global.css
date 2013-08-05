@@ -1,5 +1,5 @@
 body {
-    height: 100%; padding-top: 45px; overflow-y: scroll;
+    height: 100%; padding-top: 45px; padding-bottom: 20px; overflow-y: scroll;
 }
 .pointer {
     cursor: pointer;
