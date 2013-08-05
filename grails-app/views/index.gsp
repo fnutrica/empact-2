@@ -7,6 +7,11 @@
     <g:set var="projectInstanceList" value="${empact.Project.list()}" />
     <meta name="layout" content="main"/>
     <title>Welcome to EMPaCT</title>
+    <style type="text/css">
+    #map-canvas img {
+        max-width: none;
+    }
+    </style>
 </head>
 
 <body>
@@ -60,8 +65,11 @@
         <div id='ticker' class='inline'>
 
             <g:each in="${projectInstanceList}" status="i" var ="newproj">
-
-                <div class='project-snippet'>${newproj.name}</div>
+                <div class='project-snippet'>
+                    <g:link controller="project" action="show" id="${newproj.id}">${newproj.name}</g:link>
+                    <br>Country: ${newproj.country}
+                    <br>Concept Note: ${newproj.conceptnote.shortTitle}
+                    <br>Description: ${newproj.description}</div>
 
             </g:each>
 
@@ -136,7 +144,9 @@
                     success: function (data) {
                         if (data.ok) {
                             var marker;
-                            var infoWindow = new google.maps.InfoWindow();
+                            var infoWindow = new google.maps.InfoWindow({
+
+                            });
 
                             $.each(data.markers, function (index, point) {
                                 marker = new google.maps.Marker({
@@ -161,7 +171,6 @@
                     }
                 });
             }
-
         });
     </script>
 </body>

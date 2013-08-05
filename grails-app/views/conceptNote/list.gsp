@@ -20,7 +20,7 @@
     </g:if>
 
     <div class="accordion" id="conceptnote-accordion">
-        <g:each in="${conceptNoteInstanceList}" status="i" var="conceptNoteInstance">
+        <g:each in="${conceptNoteInstanceList}" status="i" var="conceptNoteInstance" >
             <g:form method="post">
             <div class="accordion-group" data-concept-note="${i}">
                 <div class="accordion-heading">

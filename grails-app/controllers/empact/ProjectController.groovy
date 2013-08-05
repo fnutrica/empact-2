@@ -101,7 +101,7 @@ class ProjectController {
             index++
         }
 
-        render(markerList as JSON)
+        render([ok: true, markers: markerList] as JSON)
     }
 
     def ajaxUpdate(Long id) {
