@@ -250,7 +250,7 @@ body {
     border-top: 1px solid #D2D2D2; margin: 25px 0 10px 0;
 }
 #message-thread > li.separator > div.subject {
-    border: 1px solid #D2D2D2; padding: 0 2px; background-color: #FFF; margin: 0 auto; margin-top: -14px; width: 350px;
+    border: 1px solid #D2D2D2; padding: 0 2px; background-color: #e9f2f6; margin: 0 auto; margin-top: -14px; width: 350px;
     text-align: center; font-size: 0.85em; color: #777; cursor: pointer;
 }
 #message-thread .message {
@@ -263,10 +263,10 @@ body {
     color: #666666; padding: 0 5px; font-size: 0.9em;
 }
 #message-thread li.message.other-user {
-    background: #E7EBF2;
+    background: #E2EEFB;
 }
 #message-thread li.message.owner {
-    margin-left: 190px; background: #0EE; text-align: right;
+    margin-left: 190px; background: #E1F5FB; text-align: right;
 }
 .round8 {
     border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; -ms-border-radius: 8px;

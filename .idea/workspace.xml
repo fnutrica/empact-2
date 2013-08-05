@@ -14,7 +14,7 @@
     <file path="/ProjectController.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375380742916" ignored="false" />
     <file path="/main.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375472034811" ignored="false" />
     <file path="/_listitem.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375368177483" ignored="false" />
-    <file path="/global.css" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375717839593" ignored="false" />
+    <file path="/global.css" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375726164954" ignored="false" />
     <file path="/_project.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374689310279" ignored="false" />
     <file path="/_preview.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375198302862" ignored="false" />
     <file path="/matchusers.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375111329774" ignored="false" />
@@ -65,7 +65,7 @@
     <file path="/application.js" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374192954923" ignored="false" />
     <file path="$PROJECT_DIR$/../conversation/grails-app/views/conversation/_listitem.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374245577434" ignored="false" />
     <file path="$PROJECT_DIR$/../conversation/grails-app/views/conversation/_inbox.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374244461972" ignored="false" />
-    <file path="/_inbox.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374244406688" ignored="false" />
+    <file path="/_inbox.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375726011177" ignored="false" />
     <file path="$PROJECT_DIR$/../empact/grails-app/controllers/empact/ThreadController.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374258828022" ignored="false" />
     <file path="/ThreadController.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374872216804" ignored="false" />
     <file path="/Thread.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374262093098" ignored="false" />
@@ -279,28 +279,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_usertype.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_usertype.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/_usertype.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="0.21226415">
+            <state line="11" column="21" selection-start="612" selection-end="612" vertical-scroll-proportion="-3.5106382">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/message/list.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="72" selection-start="467" selection-end="469" vertical-scroll-proportion="-3.2876713">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="63" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+            <state line="268" column="43" selection-start="6549" selection-end="6549" vertical-scroll-proportion="0.6433121">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndUserController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/empact/EndUserController.groovy">
+      <file leaf-file-name="_listitem.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/message/_listitem.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="80" selection-start="857" selection-end="857" vertical-scroll-proportion="-15.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_inbox.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/message/_inbox.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="12" selection-start="1615" selection-end="1615" vertical-scroll-proportion="-6.7021275">
               <folding />
             </state>
           </provider>
@@ -318,18 +345,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Language.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/empact/Language.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="86" selection-end="104" vertical-scroll-proportion="-2.1">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -340,7 +355,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/empact/Link.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/empact/LinkController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/link/list.gsp" />
@@ -352,10 +366,11 @@
         <option value="$PROJECT_DIR$/grails-app/views/conceptNote/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/faq/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/global.css" />
         <option value="$PROJECT_DIR$/grails-app/domain/empact/Skill.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/endUser/_usertype.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/message/_inbox.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/global.css" />
       </list>
     </option>
   </component>
@@ -622,7 +637,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16345468" sideWeight="0.45545796" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31865585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.225" sideWeight="0.60486674" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.225" sideWeight="0.8319815" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929438" sideWeight="0.627907" order="2" side_tool="false" content_ui="tabs" />
@@ -633,7 +648,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27115858" sideWeight="0.6299304" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39513326" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16801853" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -706,40 +721,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/empact/Faq.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="24" selection-end="24" vertical-scroll-proportion="-1.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conceptNote/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="4006" selection-end="4134" vertical-scroll-proportion="-3.5106382">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/matchusers.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/empact/EndUser.groovy">
-      <provider selected="true" editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="68" column="33" selection-start="1687" selection-end="1687" vertical-scroll-proportion="-29.26087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/empact/ConceptNote.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -760,13 +741,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="14" selection-start="3639" selection-end="3639" vertical-scroll-proportion="-16.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="63" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -830,7 +804,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/endUser/_usertype.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="0.21226415">
+        <state line="11" column="21" selection-start="612" selection-end="612" vertical-scroll-proportion="-3.5106382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="72" selection-start="467" selection-end="469" vertical-scroll-proportion="-3.2876713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/_listitem.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/_inbox.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="1615" selection-end="1615" vertical-scroll-proportion="-6.7021275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="43" selection-start="6549" selection-end="6549" vertical-scroll-proportion="0.6433121">
           <folding />
         </state>
       </provider>

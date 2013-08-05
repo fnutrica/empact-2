@@ -54,6 +54,6 @@
         </div>
     </g:if>
     <g:else>
-        <div class="span8 alert alert-info">Looks like you don't have any messages...</div>
+        <div class="span8 alert alert-info">You do not have any messages.</div>
     </g:else>
 </section>
