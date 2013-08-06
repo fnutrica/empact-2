@@ -124,7 +124,7 @@
 
             var timer1 = setInterval(function () {
                 $('.project-snippet').animate({
-                    top: -79
+                    top: -195
                 }, 500);
             }, 3000);
 
@@ -157,6 +157,7 @@
                                     position: new google.maps.LatLng(point.lat, point.lng),
                                     map: map
                                 });
+
 
                                 google.maps.event.addListener(marker, 'click', (function(marker, index) {
                                     return function() {

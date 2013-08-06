@@ -18,7 +18,7 @@
     <file path="/_project.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374689310279" ignored="false" />
     <file path="/_preview.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375198302862" ignored="false" />
     <file path="/matchusers.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375111329774" ignored="false" />
-    <file path="/index.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375805923641" ignored="false" />
+    <file path="/index.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375823571127" ignored="false" />
     <file path="/create.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374693216689" ignored="false" />
     <file path="/_form.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375216583990" ignored="false" />
     <file path="/login.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1374178867432" ignored="false" />
@@ -180,6 +180,7 @@
     <file path="$PROJECT_DIR$/../empact/grails-app/views/index.gsp" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375459215689" ignored="false" />
     <file path="$PROJECT_DIR$/test/unit/empact/LinkTests.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375466180994" ignored="false" />
     <file path="/Skill.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375718305631" ignored="false" />
+    <file path="/DataSource.groovy" changelist="156ccea1-95e1-4c6d-af4d-95d5f39288d7" time="1375820670374" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,19 +251,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="65" selection-start="6667" selection-end="6671" vertical-scroll-proportion="0.34402853">
-              <folding />
+            <state line="27" column="18" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="20" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-9.807693">
+            <state line="161" column="14" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.61669505">
               <folding />
             </state>
           </provider>
@@ -291,9 +294,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/conceptNote/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/conceptNote/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/conceptNote/list.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/global.css" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/global.css" />
       </list>
     </option>
   </component>
@@ -301,8 +304,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
-    <option name="y" value="25" />
+    <option name="x" value="-19" />
+    <option name="y" value="22" />
     <option name="width" value="1347" />
     <option name="height" value="980" />
   </component>
@@ -546,7 +549,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="25" width="1347" height="980" extended-state="0" />
+    <frame x="-19" y="22" width="1347" height="980" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -644,13 +647,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/project/_edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="5" selection-start="2747" selection-end="2747" vertical-scroll-proportion="1.345055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/empact/ProjectRequestController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="205" column="0" selection-start="6952" selection-end="6952" vertical-scroll-proportion="3.055794">
@@ -700,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="870" selection-end="870" vertical-scroll-proportion="0.8272059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/conceptNote/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="33" selection-start="997" selection-end="997" vertical-scroll-proportion="0.6198347">
@@ -735,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="20" selection-start="1464" selection-end="1464" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/conceptNote/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.5319149">
@@ -749,9 +731,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="14" selection-start="918" selection-end="918" vertical-scroll-proportion="0.7591973">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="20" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.43589744">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="65" selection-start="6667" selection-end="6671" vertical-scroll-proportion="0.34402853">
+        <state line="161" column="14" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.61669505">
           <folding />
         </state>
       </provider>
