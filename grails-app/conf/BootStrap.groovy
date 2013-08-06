@@ -444,6 +444,31 @@ class BootStrap {
             ForumBot.save(failOnError: true)
 
             //Student Analyst
+            def sanalyst = new EndUser(
+                    version: 0,
+                    address: '1600 Grand Avenue, St Paul, MN',
+                    email: 'sanalyst@macalester.edu',
+                    firstName: 'Student',
+                    institution: 'Macalester College',
+                    lastName: 'Analyst',
+                    password: 'password',
+                    securityAnswer: 'asasdfasdf',
+                    securityQuestion: 'seasdzsdvf',
+                    userName: 'sanalyst',
+                    verified: true,
+                    mentorName: 'Issa Ali',
+                    mentorEmail: 'iali1@macalester.edu',
+                    mentorInstitution: 'Macalester College'
+            )
+            sanalyst.setUserType(UserType.findByName('Student Analyst'))
+            sanalyst.setCountry(Country.get(4))
+            sanalyst.addToLanguages(Language.get(2))
+            sanalyst.addToLanguages(Language.get(3))
+            sanalyst.addToLanguages(Language.get(5))
+
+            sanalyst.save(failOnError: true)
+
+            //Student Analyst
             def sngobese = new EndUser(
                     version: 0,
                     address: '1600 Grand Avenue, St Paul, MN',
@@ -455,7 +480,7 @@ class BootStrap {
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'sngobese',
-                    verified: false,
+                    verified: true,
                     mentorName: 'Issa Ali',
                     mentorEmail: 'iali1@macalester.edu',
                     mentorInstitution: 'Macalester College'

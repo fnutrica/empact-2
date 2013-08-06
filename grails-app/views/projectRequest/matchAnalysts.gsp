@@ -8,9 +8,6 @@
 </head>
 
 <body>
-<!--NAVIGATION BAR-->
-<!-- End NavBar -->
-
 
 <!-- Begin Main Container -->
 <div class='container'>
@@ -227,7 +224,7 @@
                                 txt = data.error;
                             }
                             $('body').append(
-                                "<div class='alert span10 " + (data.ok ? "alert-success" : "alert-error") + "'>" + txt + "</div>"
+                                    "<div class='alert span10 " + (data.ok ? "alert-success" : "alert-error") + "'>" + txt + "</div>"
                             );
                             $('.alert').fadeOut(5000);
                         },
@@ -278,8 +275,8 @@
         function profileContainer() {
             $('#multi-display').append(
                     "<div class='student-preview round8 blank'>" +
-                        "<div class='placeholder round4'>Double Click on a student to preview profile</div>" +
-                    "</div>"
+                            "<div class='placeholder round4'>Double Click on a student to preview profile</div>" +
+                            "</div>"
             );
         }
 
