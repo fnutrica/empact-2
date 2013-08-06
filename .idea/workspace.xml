@@ -259,10 +259,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_listitem.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_listitem.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/projectRequest/_listitem.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="0.5934066">
+            <state line="18" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="-5.744681">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/project/edit.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="2220" selection-end="2220" vertical-scroll-proportion="-8.765958">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myprojects.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/project/myprojects.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="148" column="0" selection-start="5841" selection-end="5841" vertical-scroll-proportion="-8.765958">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/project/show.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="39" selection-start="1244" selection-end="1244" vertical-scroll-proportion="-6.382979">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/project/_form.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_edit.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/project/_edit.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="5" selection-start="2747" selection-end="2747" vertical-scroll-proportion="1.4166666">
               <folding />
             </state>
           </provider>
@@ -305,9 +350,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/empact/ProjectController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/suggestedUser/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/suggestedUser/_preview.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/suggestedUser/approve.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/suggestedUser/create.gsp" />
@@ -321,6 +363,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/projectRequest/_preview.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/projectRequest/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/projectRequest/_listitem.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/project/edit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/project/myprojects.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/project/_edit.gsp" />
       </list>
     </option>
   </component>
@@ -671,34 +716,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestedUser/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="785" selection-end="785" vertical-scroll-proportion="-6.382979">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestedUser/_preview.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="3056" selection-end="3056" vertical-scroll-proportion="-10.063829">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestedUser/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="59" selection-start="171" selection-end="171" vertical-scroll-proportion="-1.5957447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestedUser/approve.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="186" selection-end="186" vertical-scroll-proportion="-1.5957447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/suggestedUser/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="0" selection-start="2505" selection-end="2505" vertical-scroll-proportion="-9.787234">
@@ -750,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/project/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/projectRequest/matchAnalysts.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="285" column="7" selection-start="11355" selection-end="11355" vertical-scroll-proportion="-43.148937">
@@ -780,7 +790,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/projectRequest/_listitem.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="0.5934066">
+        <state line="18" column="0" selection-start="810" selection-end="810" vertical-scroll-proportion="-5.744681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="2220" selection-end="2220" vertical-scroll-proportion="-8.765958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/myprojects.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="0" selection-start="5841" selection-end="5841" vertical-scroll-proportion="-8.765958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="39" selection-start="1244" selection-end="1244" vertical-scroll-proportion="-6.382979">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/_edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="5" selection-start="2747" selection-end="2747" vertical-scroll-proportion="1.4166666">
           <folding />
         </state>
       </provider>

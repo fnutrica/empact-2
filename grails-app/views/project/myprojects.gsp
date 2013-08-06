@@ -42,7 +42,7 @@
                 </div>
             </g:if>
         </div>
-        <div tabindex="-1" class="alert span10 update-alert hide"></div>
+        <div class="alert span10 update-alert hide"></div>
     </g:if>
     <g:else>
         <div class="alert alert-info span10 no-items-message">
@@ -87,93 +87,59 @@
         $(document).on('click', '.edit-project', function(event) {
             event.preventDefault();
 
-            $('.inline-edit').each(function(index) {
-                var txt = $(this).data('property-value');
+            event.preventDefault();
+            var project_id = $(this).data('project-id');
 
-                if ($(this).data('property-name') == 'country'){
-                    $(this).html("<select name='country' class='input-medium bfh-countries' size='10'></select>");
-                    for (var i = 0; i < countries.length; i++) {
-                        if ($(this).data('property-value') == codes[i]) {
-                            $(".bfh-countries").append("<option value='" + codes[i] + "' selected='selected'>" + countries[i] + "</option>");
-                        } else {
-                            $(".bfh-countries").append("<option value='" + codes[i] + "'>" + countries[i] + "</option>");
-                        }
-                    }
-                } else if ($(this).data('property-name') == 'language') {
-                    $(this).html(
-                            "<select name='language' size='6'>" +
-                                    "<option value='ara'>Arabic</option>" +
-                                    "<option value='chi'>Chinese</option>" +
-                                    "<option value='eng'>English</option>" +
-                                    "<option value='fre'>French</option>" +
-                                    "<option value='rus'>Russian</option>" +
-                                    "<option value='spa'>Spanish</option>" +
-                                    "</select>"
-                    );
-                    $(this).find('select').find("option[value='" + $(this).data('property-value') + "']").attr('selected', 'selected');
-                } else if ($(this).data('property-name') != 'description') {
-                    $(this).html("<input type='text' class='inline-text' name='" + $(this).data('property-name') +
-                            "' value='" + txt +"' />");
-                }
+            $.ajax({
+                url: "${g.createLink(controller:'project', action:'inPlaceEdit')}",
+                type: 'post',
+                data: {id: project_id},
+                success: function (project) {
+                    $('#details > .row > ul.unstyled').html(project);
+                },
+                error: function (request, status, error) {
+                    alert(error)
+                },
+                complete: function () {
 
-                else {
-                    $(this).html("<textarea type='text' class='inline-text' name='" + $(this).data('property-name') +
-                            "'>" + txt + "</textarea>");
                 }
             });
-            /*$('.link-to-edit > ul').hide().after(
-             "<a href='" + "${g.createLink(controller:'endUser', action:'matchusers')}" + "' class='external-link'>Add Users</a>"
-             );*/
+
             $(this).removeClass('edit-project').addClass('save-project').html('Save Project');
         });
 
         $(document).on('click', '.save-project', function(event) {
             event.preventDefault();
 
-            var edited = {id: $('.project-controls a.active').data('project-id')};
-            $('.inline-edit > .inline-text').each(function() {
-                edited[$(this).attr('name')] = $(this).val();
-            });
-            $('.inline-edit > select > option:selected').each(function() {
-                edited[$(this).parent().attr('name')] = $(this).val();
-            });
+            if (!$(this).hasClass('disabled')) {
+                $(this).addClass('disabled');
 
-            $.ajax({
-                url: "${g.createLink(controller:'project', action:'ajaxUpdate')}",
-                type: 'post',
-                dataType: 'json',
-                data: edited,
-                success: function (data) {
-                    if (data.ok) {
-                        $('.inline-edit > .inline-text').each(function() {
-                            $(this).after($(this).val());
-                        });
-                        $('.inline-edit > .inline-text').empty().remove();
+                var edited = {edited_project_id: $('.project-controls a.active').data('project-id')};
+                $('.inline-text').each(function() {
+                    edited[$(this).attr('name')] = $(this).val();
+                });
+                $('.inline-select > option:selected').each(function() {
+                    edited[$(this).parent().attr('name')] = $.trim($(this).val());
+                });
 
-                        $('.inline-edit > select > option:selected').each(function() {
-                            $(this).parent().after($(this).text());
-                        });
-                        $('.inline-edit > select').empty().remove();
-
-                        $('.save-project').removeClass('save-project').addClass('edit-project').html('Edit Project');
-                        $('.update-alert').removeClass('hide alert-error').addClass('alert-success').html(
-                                "Project successfully updated"
-                        ).show().fadeOut(5000);
-                    } else {
+                $.ajax({
+                    url: "${g.createLink(controller:'project', action:'ajaxSave')}",
+                    type: 'post',
+                    data: edited,
+                    success: function (project) {
+                        $('#project').html(project);
+                        $('.save-project').removeClass('disabled');
+                    },
+                    error: function (request, status, error) {
                         $('.update-alert').removeClass('hide alert-success').addClass('alert-error').html(
-                                "Project could not be updated"
+                                error
                         ).show().fadeOut(5000);
-                    }
-                },
-                error: function (request, status, error) {
-                    $('.update-alert').removeClass('hide alert-success').addClass('alert-error').html(
-                            error
-                    ).show().fadeOut(5000);
-                },
-                complete: function () {
+                    },
+                    complete: function () {
 
-                }
-            });
+                    }
+                });
+            }
         });
 
     });
