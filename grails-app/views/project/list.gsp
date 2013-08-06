@@ -109,13 +109,13 @@
                             $('.pager').append(
                                     "<li class='page-num'>" +
                                             "<a href='" + $(this).attr('href') + "'>" + $(this).text() + "</a>" +
-                                    "</li>"
+                                            "</li>"
                             );
                         } else if ($(this).hasClass('currentStep')) {
                             $('.pager').append(
                                     "<li class='page-num disabled'>" +
                                             "<a href='#' onClick='return false'>" + $(this).text() + "</a>" +
-                                    "</li>"
+                                            "</li>"
                             );
                         }
                     }
@@ -124,7 +124,7 @@
                 $('.pager').append(
                         "<li class='next" + ($('.pagination > .nextLink').length ? "" : " disabled") + "'>" +
                                 "<a href='" + ($('.pagination > .nextLink').length ? $('.pagination > .nextLink').attr('href') + "'" : "#'  onClick='return false;'") + ">next &rarr;</a>" +
-                        "</li>"
+                                "</li>"
                 );
 
                 $('.pagination').remove();

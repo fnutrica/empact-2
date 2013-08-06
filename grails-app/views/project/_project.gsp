@@ -22,7 +22,7 @@
     <h3 class='inline header-text'>${fieldValue(bean: project, field: "name")}</h3>
 
     <g:if test="${userType?.equals("Moderator") || userType?.equals("WHO Official") || userType?.equals("Country Official") || userType?.equals("Superuser")}">
-        <a href="#" class='edit-project btn btn-primary inline'>
+        <a href="#" class='edit-project btn btn-primary inline' data-project-id="${project?.id}">
             Edit Project
         </a>
     </g:if>
@@ -37,23 +37,21 @@
             <li class="property">
                 <div class="inline property-label">Country:</div>
 
-                <div data-property-name='country' data-property-value="${project?.country.id}"
-                     class="inline property-value inline-edit">
+                <div class="inline property-value">
                     ${project?.country?.name}
                 </div>
             </li>
             <li class="property">
                 <div class="inline property-label">Language:</div>
 
-                <div data-property-name='language' data-property-value="${project?.language?.name}"
-                     class="inline property-value inline-edit">
+                <div class="inline property-value">
                     ${project?.language?.name}
                 </div>
             </li>
             <li class="property">
                 <div class="inline property-label">Analysts:</div>
 
-                <div class="inline property-value link-to-edit">
+                <div class="inline property-value">
                     <ul class="unstyled">
                         <g:each in="${project?.analysts}" status="j" var="analyst">
                             <li><g:link controller="endUser" action="show"
@@ -77,8 +75,7 @@
             <li class="property">
                 <div class="inline property-label">Description:</div>
 
-                <div data-property-name='description' data-property-value="${project?.description}"
-                     class="inline property-value inline-edit">${fieldValue(bean: project, field: "description")}</div>
+                <div class="inline property-value">${fieldValue(bean: project, field: "description")}</div>
             </li>
         </ul>
     </div>
