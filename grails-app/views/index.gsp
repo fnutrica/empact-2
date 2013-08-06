@@ -111,7 +111,6 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp9Xy0pbRVvSWYSLBmxF4us8sm3ZjjdrY&sensor=true"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            // $('.dropdown-toggle').dropdown();
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 2,
                 center: new google.maps.LatLng(15, 0),
@@ -125,7 +124,7 @@
 
             var timer1 = setInterval(function () {
                 $('.project-snippet').animate({
-                    top: -195
+                    top: -79
                 }, 500);
             }, 3000);
 
@@ -151,9 +150,7 @@
                     success: function (data) {
                         if (data.ok) {
                             var marker;
-                            var infoWindow = new google.maps.InfoWindow({
-
-                            });
+                            var infoWindow = new google.maps.InfoWindow();
 
                             $.each(data.markers, function (index, point) {
                                 marker = new google.maps.Marker({
