@@ -25,8 +25,8 @@ class ProjectController {
         def projectInstance = new Project(params)
 
         if(projectInstance){
-        projectInstance.owner = session.user
-        projectInstance.startDate = new Date()
+            projectInstance.owner = session.user
+            projectInstance.startDate = new Date()
         }
         if (!projectInstance.save(flush: true)) {
             render(view: "create", model: [projectInstance: projectInstance])
@@ -71,6 +71,45 @@ class ProjectController {
             return
         }
         render([description: projectInstance.description] as JSON)
+    }
+
+    def inPlaceEdit(Long id) {
+        def projectInstance = Project.get(id)
+        if (!projectInstance) {
+            // Some error here
+            return
+        }
+
+        render(
+                template: 'edit',
+                model: [
+                        projectInstance: projectInstance
+                ]
+        )
+    }
+
+    def ajaxSave() {
+        def projectInstance = Project.get(params.get('edited_project_id'))
+        if (!projectInstance) {
+            // Some error here
+            return
+        }
+
+        projectInstance.properties = params
+
+        if (!projectInstance.save(flush: true)) {
+            render([ok: false, error: "Could not edit project"] as JSON)
+            return
+        }
+        def endUserInstance = EndUser.get(session.user.id)
+
+        render(
+                template: 'project',
+                model: [
+                        projectInstance: projectInstance,
+                        userType: endUserInstance.userType.toString()
+                ]
+        )
     }
 
     def ajaxShow(Long id) {

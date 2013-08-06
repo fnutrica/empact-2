@@ -5,8 +5,6 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class SuggestedUserController {
 
-    static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-
     def index() {
         redirect(action: "list", params: params)
     }
@@ -99,6 +97,83 @@ class SuggestedUserController {
             }
         }
         */
+
+        render([ok: true] as JSON)
+    }
+
+    def approve() {
+        def projectInstanceList = Project.findAllByOwner(session.user)
+        [
+                projectInstanceList: projectInstanceList,
+                projectInstanceTotal: projectInstanceList.size()
+        ]
+    }
+
+    def suggestionsByProject(Long id) {
+        def projectInstance = Project.get(id)
+        if (!projectInstance) {
+            // Some error here
+            return
+        }
+
+        def suggestedUserInstanceList = SuggestedUser.findAllByProject(projectInstance)
+        if (!suggestedUserInstanceList) {
+            render(
+                    template: 'preview',
+                    model: [
+                            suggestedUserInstanceTotal: 0
+                    ]
+            )
+            return
+        }
+
+        render(
+                template: 'preview',
+                model: [
+                        suggestedUserInstanceList: suggestedUserInstanceList,
+                        suggestedUserInstanceTotal: suggestedUserInstanceList.size()
+                ]
+        )
+    }
+
+    def addUsersToProject() {
+        def projectInstance = Project.get(params.project_id)
+        if (!projectInstance) {
+            render([ok: false, error: 'Could not find project'] as JSON)
+            return
+        }
+
+        // Here we subtract 3 from params because there are three parameters that we do not care about: [project_id, action, controller]
+        for (int i = 0; i < (getParams().size() - 3); i++) {
+            def endUserInstance = EndUser.get(params.get("users[" + i + "]"))
+            if (!endUserInstance) {
+                render([ok: false, error: 'Could not find user'] as JSON)
+                return
+            }
+
+            if (endUserInstance.userType.toString().equals("Student Analyst")) {
+                projectInstance.addToAnalysts(endUserInstance)
+            } else if (endUserInstance.userType.toString().equals("Expert")) {
+                projectInstance.addToExperts(endUserInstance)
+            }
+
+            def suggestedUserInstance = SuggestedUser.findByUserAndProject(endUserInstance, projectInstance)
+            if (!suggestedUserInstance) {
+                render([ok: false, error: 'Could not find suggestion'] as JSON)
+                return
+            }
+
+            suggestedUserInstance.setApproved(true)
+            if (!suggestedUserInstance.save(flush: true)) {
+                render([ok: false, error: 'Could not save user approval'] as JSON)
+                return
+            }
+        }
+
+        if (!projectInstance.save(flush: true)) {
+            render([ok: false, error: 'Could not save project'] as JSON)
+            return
+        }
 
         render([ok: true] as JSON)
     }

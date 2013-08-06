@@ -77,28 +77,35 @@
     </div>
 </div>
 
-<center>
+        <center>
+        <h2><p>Want to get involved?</p></h2>
+        </center>
     <div class="row-fluid">
-        <div class="span12">
-            <h2><p>Want to get involved?</p></h2>
-        </div>
-        <div class="span4">
+        <div class="span6">
             <h4>If you want to do research...</h4>
             <p>Create a profile, upload your resume/CV and request participation on different countries’
             research needs that resonate with your passions and academic interests!</p>
         </div>
-        <div class="span3">
+        <div class="span6">
             <h4>If you're a government official...</h4>
-            <p>Post your country’s research needs related to NTD control and human development
-            measures. Also provide relevant data reports and briefs that have been done in your country.</p>
+            <p>Post research and analytical needs for building an evidence base related to the impact
+            of NTD control in your country. Also share relevant data reports and briefs that have been done
+            in your country. </p>
         </div>
-        <div class="span4">
+       </div>
+    <div class="row-fluid">
+        <div class="span6">
             <h4>If you are a faculty mentor...</h4>
             <p>Supervise, collaborate, and watch the progress of student analysts through reports,
             analytic documents and discussion.</p>
         </div>
+        <div class="span6">
+            <h4>If you are a WHO official...</h4>
+            <p>Post country, regional or global analytical needs. Share reports and resources documenting
+            the impact of NTD control on development.</p>
+        </div>
     </div>
-</center>
+
     <g:javascript library="jquery"/>
     <script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp9Xy0pbRVvSWYSLBmxF4us8sm3ZjjdrY&sensor=true"></script>
